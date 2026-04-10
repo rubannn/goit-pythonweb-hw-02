@@ -53,3 +53,8 @@ DATABASE_URL=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTG
 
 > Використання: скопіюйте файл як `.env` і замініть значення на реальні. Файл `.env` не комітиться до репозиторію.
 > `POSTGRES_HOST` — ім'я сервісу з `docker-compose.yaml`, не `localhost`.
+
+
+## Результат після запуску
+
+<img src="result.png" alt="Result after test">
