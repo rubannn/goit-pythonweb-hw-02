@@ -31,3 +31,25 @@ SQLALCHEMY_DATABASE_URL = f"postgresql+psycopg2://postgres:567234@localhost:5432
 | `make stop`     | Зупинка всіх сервісів                    |
 | `make restart`  | Перезапуск сервісів                      |
 | `make ps`       | Список запущених контейнерів             |
+
+
+## Використання .env файлу
+
+.env.example — шаблон змінних оточення
+```
+# ================================
+# PostgreSQL
+# ================================
+POSTGRES_DB=your_database_name
+POSTGRES_USER=your_username
+POSTGRES_PASSWORD=your_password
+POSTGRES_HOST=postgresdb
+
+# ================================
+# SQLAlchemy
+# ================================
+DATABASE_URL=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:5432/${POSTGRES_DB}
+```
+
+> Використання: скопіюйте файл як `.env` і замініть значення на реальні. Файл `.env` не комітиться до репозиторію.
+> `POSTGRES_HOST` — ім'я сервісу з `docker-compose.yaml`, не `localhost`.
