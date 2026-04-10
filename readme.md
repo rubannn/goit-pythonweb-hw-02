@@ -57,4 +57,8 @@ DATABASE_URL=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTG
 
 ## Результат після запуску
 
-<img src="result.png" alt="Result after test">
+<img src="result01.png" alt="Result after test">
+
+---
+
+<img src="result02.png" alt="Result after test">
